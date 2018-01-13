@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menudemo.component.css']
 })
 export class MenudemoComponent implements OnInit {
-
+name = 'DRONAMAPS'
   constructor() { }
 
   ngOnInit() {
   }
+  
 
 }
+
+

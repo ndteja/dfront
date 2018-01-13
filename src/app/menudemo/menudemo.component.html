@@ -1,5 +1,41 @@
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item>Item1</button>
-<button mat-menu-item>Item2</button>
-</mat-menu>
+
+<mat-toolbar role="header" >
+
+ <button   mat-raised-button style="color:rgba(112, 177, 117, 0.795)" [matMenuTriggerFor]="Menu">
+   <mat-icon>dashboard</mat-icon><span>Menu</span></button>
+
+ <mat-menu #Menu="matMenu">
+    
+    <button mat-menu-item ><mat-icon>dashboard</mat-icon><span>Dashboard</span></button>
+    <button mat-menu-item [matMenuTriggerFor]="subMenu"><span>
+      <mat-icon>build</mat-icon>Processing Nodes</span></button>
+      <mat-menu #subMenu="matMenu"><button mat-menu-item>General</button>
+        <button mat-menu-item>Display</button>
+        <button mat-menu-item>Profile</button>
+      </mat-menu>
+    <button mat-menu-item><mat-icon>settings</mat-icon><span>Administration</span></button>
+    <button mat-menu-item><mat-icon>code</mat-icon><span>API</span></button>
+    <button mat-menu-item><mat-icon>assignment</mat-icon><span>Documentation</span></button>
+    <button mat-menu-item><mat-icon>palette</mat-icon><span>Customize</span></button>
+ 
+  </mat-menu>
+
+
+
+<div class="imgg" >
+<span><img style="width:20%" src="assets/logo.png"></span></div>
+
+
+</mat-toolbar>
+
+<mat-card>
+  <mat-card-title>
+    <span class="header">{{name}}</span>
+  </mat-card-title>
+  <mat-card-content>
+  
+   
+</mat-card-content>
+</mat-card>
+
+
