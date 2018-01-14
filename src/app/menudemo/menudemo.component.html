@@ -1,8 +1,8 @@
 
-<mat-toolbar role="header" >
+<mat-toolbar role="header" display:flex: >
 
- <button   mat-raised-button style="color:rgba(112, 177, 117, 0.795)" [matMenuTriggerFor]="Menu">
-   <mat-icon>dashboard</mat-icon><span>Menu</span></button>
+ <button style="height:6rem; width:6rem; overflow:visible; " mat-menu-item [matMenuTriggerFor]="Menu">
+  <span><img style="width:140%; display:flex; " src="assets/logo.png"></span></button>
 
  <mat-menu #Menu="matMenu">
     
@@ -21,9 +21,6 @@
   </mat-menu>
 
 
-
-<div class="imgg" >
-<span><img style="width:20%" src="assets/logo.png"></span></div>
 
 
 </mat-toolbar>
